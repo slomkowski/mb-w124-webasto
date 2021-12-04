@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 5pin_12v_relay
+D 30 A SPDT 12 V automotive relay
+K Miniature Single Pole Relay
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,279 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BD135 Q1
+U 1 1 61AABB7E
+P 5400 4050
+F 0 "Q1" H 5592 4096 50  0000 L CNN
+F 1 "BD135" H 5592 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 5600 3975 50  0001 L CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001225.pdf" H 5400 4050 50  0001 L CNN
+	1    5400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 61AABE8F
+P 5000 3300
+F 0 "D1" V 5000 3380 50  0000 L CNN
+F 1 "D" H 5000 3426 50  0001 C CNN
+F 2 "" H 5000 3300 50  0001 C CNN
+F 3 "~" H 5000 3300 50  0001 C CNN
+	1    5000 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 61AAC3FB
+P 5000 4250
+F 0 "C1" H 5118 4296 50  0000 L CNN
+F 1 "220u" H 5118 4205 50  0000 L CNN
+F 2 "" H 5038 4100 50  0001 C CNN
+F 3 "~" H 5000 4250 50  0001 C CNN
+	1    5000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61AAC640
+P 4600 4250
+F 0 "R2" H 4670 4296 50  0000 L CNN
+F 1 "1k" H 4670 4205 50  0000 L CNN
+F 2 "" V 4530 4250 50  0001 C CNN
+F 3 "~" H 4600 4250 50  0001 C CNN
+	1    4600 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 61AAF395
+P 8000 2750
+F 0 "J3" H 8080 2742 50  0000 L CNN
+F 1 "circulation pump" H 8080 2651 50  0000 L CNN
+F 2 "" H 8000 2750 50  0001 C CNN
+F 3 "~" H 8000 2750 50  0001 C CNN
+	1    8000 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L car-relay:5pin_12v_relay K2
+U 1 1 61AB2481
+P 7200 2300
+F 0 "K2" H 7630 2300 50  0000 L CNN
+F 1 "5pin_12v_relay" H 7650 2350 50  0001 L CNN
+F 2 "" H 7650 2250 50  0001 L CNN
+F 3 "" H 7200 2300 50  0001 L CNN
+	1    7200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L car-relay:5pin_12v_relay K3
+U 1 1 61AB28C7
+P 7200 3300
+F 0 "K3" H 6771 3300 50  0000 R CNN
+F 1 "5pin_12v_relay" H 7650 3350 50  0001 L CNN
+F 2 "" H 7650 3250 50  0001 L CNN
+F 3 "" H 7200 3300 50  0001 L CNN
+	1    7200 3300
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 61AB5847
+P 8000 4000
+F 0 "J4" H 8080 3992 50  0000 L CNN
+F 1 "circulation pump power" H 8080 3901 50  0000 L CNN
+F 2 "" H 8000 4000 50  0001 C CNN
+F 3 "~" H 8000 4000 50  0001 C CNN
+	1    8000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3700 7500 3750
+Wire Wire Line
+	7500 3750 7000 3750
+Wire Wire Line
+	7000 3750 7000 3700
+Wire Wire Line
+	7500 1900 7500 1850
+Wire Wire Line
+	7500 1850 7000 1850
+Wire Wire Line
+	7000 1850 7000 1900
+Wire Wire Line
+	7000 2900 7000 2850
+Wire Wire Line
+	7000 2850 6500 2850
+Wire Wire Line
+	6500 2850 6500 1850
+Wire Wire Line
+	6500 1850 7000 1850
+Connection ~ 7000 1850
+Wire Wire Line
+	7000 2700 7000 2750
+Wire Wire Line
+	7000 2750 6650 2750
+Wire Wire Line
+	6650 2750 6650 3750
+Wire Wire Line
+	6650 3750 7000 3750
+Connection ~ 7000 3750
+Wire Wire Line
+	7800 4100 7300 4100
+Wire Wire Line
+	7300 4100 7300 3700
+Wire Wire Line
+	7800 4000 7750 4000
+Wire Wire Line
+	7750 4000 7750 1700
+Wire Wire Line
+	7750 1700 7300 1700
+Wire Wire Line
+	7300 1700 7300 1900
+Wire Wire Line
+	7800 2750 7400 2750
+Wire Wire Line
+	7400 2750 7400 2700
+Wire Wire Line
+	7800 2850 7400 2850
+Wire Wire Line
+	7400 2850 7400 2900
+$Comp
+L car-relay:5pin_12v_relay K1
+U 1 1 61AB80E1
+P 5700 3300
+F 0 "K1" H 6130 3300 50  0000 L CNN
+F 1 "5pin_12v_relay" H 6150 3350 50  0001 L CNN
+F 2 "" H 6150 3250 50  0001 L CNN
+F 3 "" H 5700 3300 50  0001 L CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 61ABB39B
+P 6800 4000
+F 0 "J2" H 6880 3992 50  0000 L CNN
+F 1 "valve" H 6880 3901 50  0000 L CNN
+F 2 "" H 6800 4000 50  0001 C CNN
+F 3 "~" H 6800 4000 50  0001 C CNN
+	1    6800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2900 5800 2800
+Wire Wire Line
+	5800 2800 6300 2800
+Wire Wire Line
+	6300 2800 6300 4000
+Wire Wire Line
+	6300 4000 6600 4000
+Wire Wire Line
+	6600 4100 5900 4100
+Wire Wire Line
+	5900 4100 5900 3700
+Wire Wire Line
+	6650 3750 5500 3750
+Wire Wire Line
+	5500 3750 5500 3700
+Connection ~ 6650 3750
+Wire Wire Line
+	5500 2900 5500 2800
+Wire Wire Line
+	5500 1850 6500 1850
+Connection ~ 6500 1850
+NoConn ~ 6000 2900
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61AC1D20
+P 4000 4100
+F 0 "J1" H 3918 3775 50  0000 C CNN
+F 1 "webasto" H 3918 3866 50  0000 C CNN
+F 2 "" H 4000 4100 50  0001 C CNN
+F 3 "~" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 3850 5500 3750
+Connection ~ 5500 3750
+Wire Wire Line
+	5500 3750 5000 3750
+Wire Wire Line
+	5000 3750 5000 3450
+Wire Wire Line
+	5000 3150 5000 2800
+Wire Wire Line
+	5000 2800 5500 2800
+Connection ~ 5500 2800
+Wire Wire Line
+	5500 2800 5500 1850
+$Comp
+L Device:R R1
+U 1 1 61AC70F7
+P 4600 3750
+F 0 "R1" H 4670 3796 50  0000 L CNN
+F 1 "1k" H 4670 3705 50  0000 L CNN
+F 2 "" V 4530 3750 50  0001 C CNN
+F 3 "~" H 4600 3750 50  0001 C CNN
+	1    4600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4250 5500 4450
+Wire Wire Line
+	5500 4450 5000 4450
+Wire Wire Line
+	5000 4450 5000 4400
+Wire Wire Line
+	5200 4050 5000 4050
+Wire Wire Line
+	5000 4050 5000 4100
+Wire Wire Line
+	4600 4050 4600 3900
+Wire Wire Line
+	4600 4050 5000 4050
+Connection ~ 5000 4050
+Wire Wire Line
+	4600 4100 4600 4050
+Connection ~ 4600 4050
+Wire Wire Line
+	5000 4450 4600 4450
+Wire Wire Line
+	4600 4450 4600 4400
+Connection ~ 5000 4450
+Wire Wire Line
+	5000 2800 4600 2800
+Wire Wire Line
+	4600 2800 4600 3600
+Connection ~ 5000 2800
+Wire Wire Line
+	4200 4100 4300 4100
+Wire Wire Line
+	4300 4100 4300 4450
+Wire Wire Line
+	4300 4450 4600 4450
+Connection ~ 4600 4450
+Wire Wire Line
+	4200 4000 4300 4000
+Wire Wire Line
+	4300 4000 4300 2800
+Wire Wire Line
+	4300 2800 4600 2800
+Connection ~ 4600 2800
+Text Notes 4450 2050 0    50   ~ 0
+slomkowski.eu
+$EndSCHEMATC
